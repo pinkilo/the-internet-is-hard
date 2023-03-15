@@ -50,7 +50,7 @@ _This template doesn't rely on any external dependencies or services._
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/byanthny/repo-template.git
+   https://github.com/pinkilo/the-internet-is-hard.git
    ```
 
 # Technical Stuff
@@ -60,8 +60,7 @@ Built with <3
 ```text
 repo-template/
 │
-├── src/ *project source
-│   ├── logo.png
+├── content/ *content and md files
 │
 ├── LICENSE/ *Usually MIT
 ├── CHANGELOG.md/ *CHANGELOG
@@ -71,8 +70,8 @@ repo-template/
 # Roadmap
 See `CHANGELONG.md` for changes.
 
-- [x] Create repo template
-- [ ] Add to projects
+- [x] Create readme template
+- [ ] Add missing files (changelog, license, etc).
  
 ---
 ## License
