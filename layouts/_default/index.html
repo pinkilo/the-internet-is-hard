@@ -1,24 +1,26 @@
 {{ define "main" }}
-<main class="container px-4 py-24 mx-auto">
-    <h1 class="text-6xl text-center">{{ .Site.Title }}</h1>
-    <!--Search bar and nav-->
-    <div class="px-5 py-10 text-lg">
-        {{ .Content }}
-    </div>
 
-    <div class="grid grid-cols-1 gap-3 text-center md:grid-cols-3">
-        {{ range .Site.Sections }}
-        <a href="{{ .Permalink }}"
-            class="w-full p-5 transition bg-white aspect-square rounded-xl drop-shadow-sm hover:drop-shadow-md drop-shadow-lg">
+<a
+    class="p-4 text-5xl leading-normal text-center underline md:text-6xl hover:cursor-pointer bg-rose-500 hover:invert text">{{
+    .Site.Title }}</a>
+<!--Search bar and nav-->
+<div class="px-5 py-10 text-lg text-center">
+    {{ .Content }}
+</div>
 
-            <div class="p-12 max-h-[80%] opacity-80">
-                {{.Content}}
-            </div>
-            <span class="text-2xl">{{.Title}}</span>
+<div class="grid grid-cols-1 gap-12 text-center md:gap-6 md:grid-cols-3">
+    {{ range .Site.Sections }}
+    <a href="{{ .Permalink }}"
+        class="flex items-center justify-center w-full p-5 text-black transition bg-white hover:bg-rose-500 aspect-square rounded-xl hover:drop-shadow-md drop-shadow-xl group">
+        <div>
+            <span class="text-2xl group-hover:underline group-hover:text-white text-rose-500">{{.Title}}</span>
             <br>
-            {{.Description}}
-        </a>
-        {{ end }}
-    </div>
+            <span class="group-hover:opacity-60">
+                {{.Description}}
+            </span>
+        </div>
+    </a>
+    {{ end }}
+</div>
 </main>
 {{ end }}
