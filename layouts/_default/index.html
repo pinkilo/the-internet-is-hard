@@ -1,6 +1,7 @@
 {{ define "main" }}
 
-<a class="p-4 text-5xl leading-normal text-center underline md:text-6xl hover:cursor-pointer bg-rose-500 text">{{
+<a href="{{.Site.BaseURL}}"
+    class="p-4 text-5xl leading-normal text-center underline md:text-6xl hover:cursor-pointer bg-rose-500 text">{{
     .Site.Title }}</a>
 <!--Search bar and nav-->
 <div class="px-5 py-10 text-lg text-center">
