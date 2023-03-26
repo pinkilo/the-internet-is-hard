@@ -34,6 +34,7 @@ the best value on the internet since 2023.
 - hugo
 - pnpm
 - node
+- npm
 
 ### Installation
 
@@ -48,7 +49,11 @@ _This template doesn't rely on any external dependencies or services._
    ```sh
     pnpm install
    ```
-3. Start hugo server (see hugo docs for more options)
+3. watch files and build css (in a separate terminal)
+   ```sh
+    npx tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --jit --watch
+   ```
+4. Start hugo server (see hugo docs for more options)
    ```sh
     hugo server
    ```

@@ -13,18 +13,13 @@
         {{ end }}
     </title>
 
-    {{ $styles := resources.Get "css/main.css" | toCSS | postCSS }}
+    {{ $style := resources.Get "css/style.css" }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" />
 
-    {{ if .Site.IsServer }}
-    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-    {{ else }}
-    {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
-    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
-    {{ end }}
 </head>
 
 <body>
-    <div class="content">
+    <div class=" content">
         {{ block "main" . }}
         {{ end }}
     </div>
