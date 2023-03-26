@@ -110,3 +110,5 @@ See `CHANGELONG.md` for changes.
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Acknowledgments
+
+- [tailwind & hugo setup](https://www.hugotutorial.com/posts/2022-01-03-hugo-and-tailwindcss-3.0/)
