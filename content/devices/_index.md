@@ -1,4 +1,4 @@
 ---
-title: devices
+title: smart devices
 description: description
 ---
