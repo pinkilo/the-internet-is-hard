@@ -1,4 +1,8 @@
 {{ define "main" }}
-<h1 class="title">{{ .Title | title }}</h1>
-{{ .Content }}
+<div class="m-auto w-fit">
+    <h1 class="px-5 py-2 text-4xl bg-rose-500 w-fit">{{ .Title | title }}</h1>
+</div>
+<div class="mt-5 text-left">
+    {{ .Content }}
+</div>
 {{ end }}
