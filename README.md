@@ -103,6 +103,7 @@ See `CHANGELONG.md` for changes.
 - [x] content rendering and basic styling
 - [ ] better content styling
 - [ ] section sidebar for articles
+- [ ] backlinks
 - [ ] better tailwind setup
 - [ ] add Changlog, License, etc
 
