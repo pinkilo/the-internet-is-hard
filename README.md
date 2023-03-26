@@ -1,48 +1,39 @@
-<p align="center">
-<img src="src/logo.png" width="250"/>
-</p>
-
-<br />
 <div align="center">
   <h1 align="center">the internet is hard (working title)</h3>
 
   <p align="center">
-    [Status] we get it, the internet can be hard
+    we get it, the internet can be hard
     <br />
-    <a href="https://github.com/pinkilo">Live Site</a>
+    <a href="https://github.com/pinkilo/the-internet-is-hard">repo - live site coming soon</a>
   </p>
 </div>
 
 ## Table of Contents
-* [Project Description](#description)
-* [Getting Started](#Getting-Started)
-    * [Prerequisites](#Prerequisites)
-    * [Installation](#Installation)
-* [Technical Stuff](#technical-stuff)
-    * [File Structure](#file-organization)
-* [Roadmap](#Roadmap)
-* [License](#License)
-* [Acknowledgments](#Acknowledgments)
+
+- [Project Description](#description)
+- [Getting Started](#Getting-Started)
+  - [Prerequisites](#Prerequisites)
+  - [Installation](#Installation)
+- [Technical Stuff](#technical-stuff)
+  - [File Structure](#file-organization)
+- [Roadmap](#Roadmap)
+- [License](#License)
+- [Acknowledgments](#Acknowledgments)
+
 ---
 
 # Description
-About the project.
+
+the best value on the internet since 2023.
 
 # Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-
-Install go
-
-* npm
-  ```sh
-  hugo-----
-  ```
+- go
+- hugo
+- pnpm
+- node
 
 ### Installation
 
@@ -50,34 +41,67 @@ _This template doesn't rely on any external dependencies or services._
 
 1. Clone the repo
    ```sh
-   https://github.com/pinkilo/the-internet-is-hard.git
+   git clone https://github.com/pinkilo/the-internet-is-hard.git
+   cd the-internet-is-hard/
+   ```
+2. Install tailwind dependencies
+   ```sh
+    pnpm install
+   ```
+3. Start hugo server (see hugo docs for more options)
+   ```sh
+    hugo server
    ```
 
 # Technical Stuff
-Built with <3
+
+Built with <3, hugo, & tailwind.
 
 #### File Organization
+
 ```text
-repo-template/
+/
 │
-├── content/ *content and md files
+├── archetypes/ *default front matter for new content
 │
-├── LICENSE/ *Usually MIT
+├── assets/ *css files, tailwind base imports.
+│
+├── content/ *content as md files
+│   ├── sections/ *each section lives in it's own folder
+│   │   ├── article.md/ *pages are md files or bundles (see hugo docs)
+│
+├── layouts/ *html template files
+│   ├── _default/ *default templates
+│   │   ├── baseof.html/ *base template
+│   │   ├── index.html/ *homepage template
+│   │   ├── list.html/ *archive page template, not in use
+│   │   ├── rss.xml/ *rss config, not in use
+│   │   ├── single.html/ *single article page template
+│
+│
+├── static/ *static files (imgs, etc)
+│
+├── LICENSE/ *??
 ├── CHANGELOG.md/ *CHANGELOG
 └── README.md/   *README
 
 ```
+
 # Roadmap
+
 See `CHANGELONG.md` for changes.
 
-- [x] Create readme template
-- [ ] Add missing files (changelog, license, etc).
- 
+- [x] init
+- [x] basic structure
+- [ ] content rendering and basic styling
+- [ ] better styling
+- [ ] etc
+- [ ] add Changlog, License, etc
+
 ---
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Acknowledgments
-
-- [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
