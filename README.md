@@ -72,7 +72,9 @@ Built with <3, hugo, & tailwind.
 ├── assets/ *css files, tailwind base imports.
 │
 ├── content/ *content as md files
+│   ├── _index.md *homepage content above sections grid
 │   ├── sections/ *each section lives in it's own folder
+│   │   ├── _index.md/ *section information (title, description, icon)
 │   │   ├── article.md/ *pages are md files or bundles (see hugo docs)
 │
 ├── layouts/ *html template files
@@ -100,7 +102,7 @@ See `CHANGELONG.md` for changes.
 - [x] basic structure
 - [ ] content rendering and basic styling
 - [ ] better styling
-- [ ] etc
+- [ ] better tailwind setup
 - [ ] add Changlog, License, etc
 
 ---
