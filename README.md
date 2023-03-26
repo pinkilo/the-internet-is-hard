@@ -100,8 +100,9 @@ See `CHANGELONG.md` for changes.
 
 - [x] init
 - [x] basic structure
-- [ ] content rendering and basic styling
-- [ ] better styling
+- [x] content rendering and basic styling
+- [ ] better content styling
+- [ ] section sidebar for articles
 - [ ] better tailwind setup
 - [ ] add Changlog, License, etc
 
