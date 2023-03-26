@@ -596,6 +596,10 @@ video {
   aspect-ratio: 1 / 1;
 }
 
+.min-h-\[60\%\] {
+  min-height: 60%;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -687,6 +691,11 @@ video {
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .text-left {
