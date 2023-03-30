@@ -2,7 +2,9 @@
 <div class="m-auto w-fit">
     <h1 class="px-5 py-2 text-4xl bg-rose-500 w-fit">{{ .Title | title }}</h1>
 </div>
-<div class="mt-5 text-left">
-    {{ .Content }}
+<div class="w-full mt-5 text-left">
+    <article class="w-full prose prose-base max-w-none prose-invert">
+        {{ .Content }}
+    </article>
 </div>
 {{ end }}
