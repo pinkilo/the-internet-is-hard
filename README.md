@@ -51,11 +51,11 @@ _This template doesn't rely on any external dependencies or services._
    ```
 3. watch files and build css (in a separate terminal)
    ```sh
-    npx tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --jit --watch
+    pnpm watch-css
    ```
 4. Start hugo server (see hugo docs for more options)
    ```sh
-    hugo server
+    pnpm hugo
    ```
 
 # Technical Stuff
