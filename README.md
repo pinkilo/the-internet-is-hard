@@ -4,7 +4,7 @@
   <p align="center">
     we get it, the internet can be hard
     <br />
-    <a href="https://github.com/pinkilo/the-internet-is-hard">repo - live site coming soon</a>
+    <a href="https://pinkilo.github.io/the-internet-is-hard/">live site</a>
   </p>
 </div>
 
